@@ -1,0 +1,19 @@
+<% include partials/header.ejs %>
+<body>
+  <div class="container">
+    <h1 class="title-contact">Contacts: </h1>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Surname</th>
+      </tr>
+      <% docs.forEach( e => { %> <!-- Iterate over each contact -->
+      <tr>
+        <td> <%= e.name %> </td>
+        <td> <%= e.surname %> </td>
+      </tr>
+      <% }); %>
+    </table>
+  </div>
+</body>
+</html>
